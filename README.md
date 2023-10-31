@@ -136,7 +136,7 @@ Example CSV output: [fio-results-2023-10-30-21-45.csv](fio-results-2023-10-30-21
 
 ## Logging
 
-The script logs its operations to a file named `[fio_processing.log](fio_processing.log)`. This can be useful for debugging or understanding the script's operations.
+The script logs its operations to a file named `fio_processing.log`. This can be useful for debugging or understanding the script's operations. An example can be found [fio_processing.log](here).
 
 ## License
 Freeware  -  Use at your own risk.  No warranty expressed or implied.
