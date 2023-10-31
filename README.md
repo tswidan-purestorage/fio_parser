@@ -145,3 +145,11 @@ The script logs its operations to a file named `fio_processing.log`. This can be
 ## License
 Freeware  -  Use at your own risk.  No warranty expressed or implied.
 
+## Updates
+If you would like to update the script, please fork the repository and submit a pull request.
+
+## Author Information
+Tamer Swidan, tswidan@purestorage.com
+Solutions Architect at Pure Storage
+
+
