@@ -32,7 +32,7 @@ Every work load in FIO (called a job) has three data points associated with it, 
 
 **Submission Latency (slat)** is the amount of time from when fio initialized the I/O to submission to the operating system. It is measured in nanoseconds (ns).
 
-++Completion Latency (clat)++ is the amount of time from when the I/O was submitted to the operating system to when it was completed. It is measured in nanoseconds (ns).
+**Completion Latency (clat)** is the amount of time from when the I/O was submitted to the operating system to when it was completed. It is measured in nanoseconds (ns).
 
 **Total Latecy (lat)** is the amount of time the time from when fio created the I/O unit to completion of the I/O operation. It is the sum of submission and completion latency. 
   It is measured in nanoseconds (ns).
