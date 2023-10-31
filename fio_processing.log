@@ -1,0 +1,74 @@
+2023-10-30 21:35:10,631 - INFO - Script started.
+2023-10-30 21:35:10,631 - INFO - Main function started.
+2023-10-30 21:35:10,632 - INFO - Processing files from directory: ./
+2023-10-30 21:35:10,632 - INFO - Detected mode: standalone
+2023-10-30 21:35:10,632 - INFO - Starting the processing of log files in directory: ./
+2023-10-30 21:35:10,632 - INFO - Processing file: randread-512k_bw.4.log
+2023-10-30 21:35:10,637 - INFO - Processing file: randread-512k_clat.4.log
+2023-10-30 21:35:10,640 - INFO - Processing file: randread-512k_iops.4.log
+2023-10-30 21:35:10,643 - INFO - Processing file: randread-512k_lat.4.log
+2023-10-30 21:35:10,647 - INFO - Processing file: randread-512k_slat.4.log
+2023-10-30 21:35:10,660 - INFO - Processing file: randwrite-512k_bw.2.log
+2023-10-30 21:35:10,667 - INFO - Processing file: randwrite-512k_clat.2.log
+2023-10-30 21:35:10,673 - INFO - Processing file: randwrite-512k_iops.2.log
+2023-10-30 21:35:10,679 - INFO - Processing file: randwrite-512k_lat.2.log
+2023-10-30 21:35:10,683 - INFO - Processing file: randwrite-512k_slat.2.log
+2023-10-30 21:35:10,687 - INFO - Processing file: read-512k_bw.3.log
+2023-10-30 21:35:10,691 - INFO - Processing file: read-512k_clat.3.log
+2023-10-30 21:35:10,699 - INFO - Processing file: read-512k_iops.3.log
+2023-10-30 21:35:10,704 - INFO - Processing file: read-512k_lat.3.log
+2023-10-30 21:35:10,710 - INFO - Processing file: read-512k_slat.3.log
+2023-10-30 21:35:10,716 - INFO - Processing file: write-512k-seq_bw.1.log
+2023-10-30 21:35:10,720 - INFO - Processing file: write-512k-seq_clat.1.log
+2023-10-30 21:35:10,725 - INFO - Processing file: write-512k-seq_iops.1.log
+2023-10-30 21:35:10,728 - INFO - Processing file: write-512k-seq_lat.1.log
+2023-10-30 21:35:10,732 - INFO - Processing file: write-512k-seq_slat.1.log
+2023-10-30 21:35:10,736 - INFO - Aggregating data from all files...
+2023-10-30 21:35:10,738 - DEBUG - Job Type :bw
+
+2023-10-30 21:35:10,741 - DEBUG - Job Type :slat
+
+2023-10-30 21:35:10,744 - DEBUG - Job Type :iops
+
+2023-10-30 21:35:10,746 - DEBUG - Job Type :lat
+
+2023-10-30 21:35:10,748 - DEBUG - Job Type :clat
+
+2023-10-30 21:35:10,766 - DEBUG - Missing values in result DataFrame:
+Job_name        Job_type  Data_direction
+Row_num                                     0
+randread-512k   bw        Read              1
+                clat      Read              0
+                iops      Read              1
+                lat       Read              0
+                slat      Read              0
+randwrite-512k  bw        Write             1
+                clat      Write             0
+                iops      Write             1
+                lat       Write             0
+                slat      Write             0
+read-512k       bw        Read              1
+                clat      Read              0
+                iops      Read              1
+                lat       Read              0
+                slat      Read              0
+write-512k-seq  bw        Write             1
+                clat      Write             0
+                iops      Write             1
+                lat       Write             0
+                slat      Write             0
+dtype: int64
+2023-10-30 21:35:10,791 - DEBUG - Final Result DataFrame:
+Job_name       Row_num randread-512k                           randwrite-512k                          read-512k                           write-512k-seq                         
+Job_type                          bw  clat    iops   lat  slat             bw  clat   iops   lat  slat        bw  clat    iops   lat  slat             bw  clat   iops   lat  slat
+Data_direction                  Read  Read    Read  Read  Read          Write Write  Write Write Write      Read  Read    Read  Read  Read          Write Write  Write Write Write
+0                    1       2335.33  0.01  4670.0  0.21  0.20         478.48  0.81  956.0  1.04  0.23   2137.64  0.02  4275.0  0.23  0.22         334.00  1.16  668.0  1.49  0.34
+1                    2       2302.50  0.02  4605.0  0.21  0.20         445.00  0.88  890.0  1.12  0.24   2197.00  0.02  4394.0  0.22  0.21         342.50  1.12  685.0  1.46  0.34
+2                    3       2273.27  0.02  4546.0  0.22  0.20         417.42  0.95  834.0  1.19  0.24   2216.00  0.02  4432.0  0.22  0.21         344.00  1.11  688.0  1.45  0.34
+3                    4       2265.50  0.01  4531.0  0.22  0.20         389.50  1.06  779.0  1.29  0.22   2365.50  0.02  4731.0  0.21  0.19         343.34  1.12  686.0  1.45  0.33
+4                    5       2349.50  0.01  4699.0  0.21  0.19         376.12  1.10  752.0  1.33  0.22   2268.77  0.02  4537.0  0.22  0.20         331.00  1.17  662.0  1.51  0.35
+2023-10-30 21:35:10,791 - INFO - Finished processing client/server log files in directory: /Users/tswidan/fio/clnt_svr/single
+2023-10-30 21:35:10,791 - INFO - Writing data to Excel file: fio-results-2023-10-30-21-35.xlsx
+2023-10-30 21:35:10,856 - INFO - Data successfully written to fio-results-2023-10-30-21-35.xlsx
+2023-10-30 21:35:10,856 - INFO - Data has been successfully exported to fio-results-2023-10-30-21-35.xlsx
+2023-10-30 21:35:10,856 - INFO - Script finished.
