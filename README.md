@@ -115,10 +115,11 @@ randwrite-512k_slat.2.log	write-512k-seq_slat.1.log
 To process log files in the `./` directory and export the results to an Excel file:
 
 ```bash
-./parsefio.py ./logs
+./parsefio.py ./
 ```
+Example Excel output: [fio-results-2023-10-30-21-35.xlsx](fio-results-2023-10-30-21-35.xlsx)
 
-To process log files in the `./logs` directory and export the results to a CSV file:
+To process log files in the `./` directory and export the results to a CSV file:
 
 ```bash
 ./parsefio.py ./logs -f csv
