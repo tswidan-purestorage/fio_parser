@@ -29,8 +29,11 @@ To use the script, navigate to the directory containing the script and execute i
 Every work load in FIO (called a job) has three data points associated with it, Bandwidth, IOPS, and Latency (called job types). FIO will name the log files as follows: {Jobe Name}_{job Type}.{job Number}.log. If fio is running in client/server mode, the log files will be named as follows: {Jobe Name}_{job Type}.{job Number}.log.{worker IP address}.
 
 **Badwidth** is the amount of data that was read or written to the device. It is measured in Kibibytes per second (KiB/s).
+
 **Submission Latency (slat)** is the amount of time from when fio initialized the I/O to submission to the operating system. It is measured in nanoseconds (ns).
+
 ++Completion Latency (clat)++ is the amount of time from when the I/O was submitted to the operating system to when it was completed. It is measured in nanoseconds (ns).
+
 **Total Latecy (lat)** is the amount of time the time from when fio created the I/O unit to completion of the I/O operation. It is the sum of submission and completion latency. 
   It is measured in nanoseconds (ns).
 
