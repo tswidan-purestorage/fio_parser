@@ -121,7 +121,7 @@ Example Excel output: [fio-results-2023-10-30-21-35.xlsx](fio-results-2023-10-30
 To process log files in the `./` directory and export the results to a CSV file:
 
 ```bash
-./parsefio.py ./logs -f csv
+./parsefio.py ./ -f csv
 ```
 Example CSV output: [fio-results-2023-10-30-21-45.csv](fio-results-2023-10-30-21-45.csv)
 
