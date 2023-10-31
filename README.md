@@ -51,7 +51,7 @@ If fio is running in client/server mode, log files will be further named as foll
 - The impact is that the IOPS log file will have 1 I/O per line, and the all other data points will be based on single I/O, which is not useful.
 
 **Workflow:**
-- The script will extract the job name, and job type from the log file names, and also look inside each log file to determine if the job was read, write, or delete workload.
+- The script will extract the job names, and log types from the log file names, and also look inside each log file to determine if the job was read, write, or delete workload.
 - Column names are comprised of the job name, job type, and any of "Read", "Write", or "Trim" words, added as a safety in case the job name was not discriptive.
 - When processing log files for fio client/server mode. bandwidth, and IOPS data reporting are the *accumulation* of all fio workers workload. Latency data reporting are the *average* of all fio workers workload.
 
@@ -124,17 +124,21 @@ To process log files in the `./` directory and export the results to a CSV file:
 ```bash
 ./parsefio.py ./logs -f csv
 ```
+Example CSV output: [fio-results-2023-10-30-21-45.csv](fio-results-2023-10-30-21-45.csv)
+
 
 ## Features
 
 - Automatically detects whether the logs are in standalone or client/server mode.
-- Processes log files and aggregates the data.
+- When using client/server mode, the script will process all worker logs, and aggregate the data into a single table.
+- Converts the bandwidth to MiB/s.
+- Converts the latency reports to milliseconds.
 - Exports the aggregated data to either an Excel spreadsheet or a CSV file.
 
 ## Logging
 
 The script logs its operations to a file named `fio_processing.log`. This can be useful for debugging or understanding the script's operations.
 
----
+## License
+Freeware  -  Use at your own risk.  No warranty expressed or implied.
 
-You can save the above content to a file named `README.md` in the same directory as your script. This will provide users with instructions and information about how to use your script.
