@@ -1,8 +1,8 @@
 2023-10-30 21:45:21,079 - INFO - Script started.
 2023-10-30 21:45:21,079 - INFO - Main function started.
-2023-10-30 21:45:21,080 - INFO - Processing files from directory: /Users/tswidan/fio/clnt_svr/single
+2023-10-30 21:45:21,080 - INFO - Processing files from directory: ./
 2023-10-30 21:45:21,081 - INFO - Detected mode: standalone
-2023-10-30 21:45:21,081 - INFO - Starting the processing of log files in directory: /Users/tswidan/fio/clnt_svr/single
+2023-10-30 21:45:21,081 - INFO - Starting the processing of log files in directory: ./
 2023-10-30 21:45:21,081 - INFO - Processing file: randread-512k_bw.4.log
 2023-10-30 21:45:21,084 - INFO - Processing file: randread-512k_clat.4.log
 2023-10-30 21:45:21,087 - INFO - Processing file: randread-512k_iops.4.log
